@@ -12,20 +12,26 @@
 
 
 
-let buttons = document.querySelectorAll("[name=foreground-color]");
-  for (let button of Array.from(buttons)) {
-    button.addEventListener("change", () => {
+let foreGround = document.querySelectorAll("[name=foreground-color]");
+  for (let button of Array.from(forgGround)) {
+    button.addEventListener("value", () => {
       document.body.style.background = button.value;
     });
   }
 //This is for text color
 
 
-  let buttons = document.querySelectorAll("[name=background-color]");
-  for (let button of Array.from(buttons)) {
-    button.addEventListener("change", () => {
+  let backGround = document.querySelectorAll("[name=background-color]");
+  for (let button of Array.from(backGround)) {
+    button.addEventListener("value", () => {
       document.body.style.background = button.value;
     });
   }
 //this is for back ground color
  
+/*  document is showing as a error again
+
+let foreGround = document.querySelectorAll("[name=foreground-color]");
+^
+
+ReferenceError: document is not defined */
